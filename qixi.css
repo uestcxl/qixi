@@ -1,0 +1,82 @@
+html, body {
+	margin: 0;
+	background: #f7565b;
+}
+.wrapper {
+	margin-left: 30%;
+	margin-top: 50%;
+}
+.main {
+	position: absolute;
+}
+.heart {
+	height: 280px;
+	width: 300px;
+	margin: 40px 50px 0px 100px;
+	position: relative;
+	z-index: 1;
+}
+
+.heart:before, .heart:after {
+    width: 150px;
+    height: 240px;
+    border-radius: 75px 75px 0 0;
+	content: "";
+	position: absolute;
+	top: 0px;
+	z-index: -1;
+}
+
+.heart:before {
+	left: 0px;
+	background-color: #cf9797;
+	box-shadow: -10px 1px 15px 0 rgba(0,0,0,0.2),
+    inset 20px -195px 65px 0 #640d0d,
+    inset -2px 2px 0 rgba(255,255,255,.75),
+    inset -5px 20px 0 rgba(255,255,255,.35),
+    inset -5px 20px 10px rgba(255,255,255,.25);
+	transform:rotate(-45deg);
+}
+
+.heart:after {
+	left: 64px;
+	background-color: #640d0d;
+	box-shadow: 15px 3px 25px rgba(0,0,0,0.35),
+    inset -25px 10px 35px rgba(0,0,0,.35);
+	transform: rotate(45deg);
+}
+
+.heart .message {
+    color: #640d0d;
+    font-size: 64px;
+    font-family: cursive;
+    font-weight: bold;
+    text-shadow: -1px -1px 1px #ae6363, 1px 1px 1px #450000;
+    padding: 45px 0 0 30px;
+    transform: rotate(-15deg);
+}
+
+.popover {
+	margin-top: 60px;
+    position: absolute;
+    padding: 15px 30px;
+    background: #F9787C;
+    border-radius: 10px;
+}
+
+.popover:before{
+    content: "叶丽文同学七夕快乐(づ￣ 3￣)づ";
+    color: #fff;
+    font-size: 26px;
+}
+
+.popover:after{
+    position: absolute;
+    right: 0;
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    border-bottom: 28px solid transparent;
+    border-right: 58px solid #F9787C;
+}

@@ -35,7 +35,9 @@ html, body {
     inset -2px 2px 0 rgba(255,255,255,.75),
     inset -5px 20px 0 rgba(255,255,255,.35),
     inset -5px 20px 10px rgba(255,255,255,.25);
-	transform:rotate(-45deg);
+	-webkit-transform:rotate(-45deg);
+	-o-transform:rotate(-45deg);
+	-moz-transform:rotate(-45deg);
 }
 
 .heart:after {
@@ -43,7 +45,9 @@ html, body {
 	background-color: #640d0d;
 	box-shadow: 15px 3px 25px rgba(0,0,0,0.35),
     inset -25px 10px 35px rgba(0,0,0,.35);
-	transform: rotate(45deg);
+	-webkit-transform: rotate(45deg);
+	-o-transform:rotate(45deg);
+	-moz-transform:rotate(45deg);
 }
 
 .heart .message {
@@ -53,7 +57,9 @@ html, body {
     font-weight: bold;
     text-shadow: -1px -1px 1px #ae6363, 1px 1px 1px #450000;
     padding: 45px 0 0 30px;
-    transform: rotate(-15deg);
+    -webkit-transform: rotate(-15deg);
+	-o-transform:rotate(-15deg);
+	-moz-transform:rotate(-15deg);
 }
 
 .popover {
